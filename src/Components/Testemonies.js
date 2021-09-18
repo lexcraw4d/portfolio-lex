@@ -9,14 +9,14 @@ function Social() {
             
             <Box>
            
-            <Text w="400px" ml="200px" >  <Icon as={FaQuoteLeft}></Icon> I was a TA for the full stack development bootcamp that Alexia attended. Alexia is very well driven and has a lot of to offer any team that she is a part of. Being a very hands on and creative individual, Alexia strives to always learn more in every role that I saw her take on in the bootcamp. I fully endorse this candidate and believe that she would be an amazing asset to your company and help build your team up!  <Icon as={FaQuoteRight}></Icon>
+            <Text w="300px" ml="200px" >  <Icon as={FaQuoteLeft}></Icon> I was a TA for the full stack development bootcamp that Alexia attended. Alexia is very well driven and has a lot of to offer any team that she is a part of. Being a very hands on and creative individual, Alexia strives to always learn more in every role that I saw her take on in the bootcamp. I fully endorse this candidate and believe that she would be an amazing asset to your company and help build your team up!  <Icon as={FaQuoteRight}></Icon>
             <Text fontWeight="bold" fontSize="1.4rem"> - Brennan P.</Text> </Text>
             
            </Box>
           <br />
             <Box>
            
-            <Text w="700px"><Icon as={FaQuoteLeft}></Icon> Lexie is a brilliant and gifted web developer who really brings out the best in everyone around her.  I had the pleasure of collaborating with her on two projects and her knowledge of both front end and backend development resulted in extraordinary project outcomes.   Lexie’s biggest strengths are her unbridled perseverance through adversity and her willingness to go above and beyond.  I highly recommend Lexie as a Full Stack web developer and she will be an asset to any company!  <Icon as={FaQuoteRight}></Icon><Text fontWeight="bold" fontSize="1.4rem"> - Rachel S.</Text> 
+            <Text w="600px"><Icon as={FaQuoteLeft}></Icon> Lexie is a brilliant and gifted web developer who really brings out the best in everyone around her.  I had the pleasure of collaborating with her on two projects and her knowledge of both front end and backend development resulted in extraordinary project outcomes.   Lexie’s biggest strengths are her unbridled perseverance through adversity and her willingness to go above and beyond.  I highly recommend Lexie as a Full Stack web developer and she will be an asset to any company!  <Icon as={FaQuoteRight}></Icon><Text fontWeight="bold" fontSize="1.4rem"> - Rachel S.</Text> 
            
             </Text>
             

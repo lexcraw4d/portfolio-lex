@@ -13,8 +13,8 @@ function Header() {
     return (
         <Stack>
            
-        <Image ml="400"position="fixed" bg="blue.200" opacity="0.8" w="230px" h="230px" rounded="full" src={picture} z-index= "-1"alignSelf="flex-end" ></Image>
- \
+        <Image ml="400"position="fixed" bg="blue.200" opacity="0.8" w="300px" h="300px" rounded="full" src={picture} z-index= "-1"alignSelf="flex-end" ></Image>
+ 
             <Box mt={isNotSmallerScreen ? "0" : 16 } align='flex-start'>
             <Flex direction={isNotSmallerScreen ? "row" : "column"} spacing="300px" p={isNotSmallerScreen ? "32" : "0"} alignSelf = "flex-start">
                     <Text fontSize="5xl" fontWeight="semibold">

@@ -11,26 +11,27 @@ function App() {
   const isDark = colorMode === "dark"
 
   return (
-    <VStack padding={5}>
       <StickyContainer>
+    <VStack padding={5}>
        
-      <Flex  w="100%">
-        <Heading mr="500" size="md" fontWeight="semibold" color="cyan.400">
+      <Flex  w="100%" justifyContent=
+    "space-between">
+        <Heading mr="16rem" size="md" fontWeight="semibold" color="cyan.400">
          
       <IconButton mr={2}icon={<FaLinkedin/>} isRound ="true"></IconButton>
       <IconButton mr={2} icon={<FaGithub />} isRound="true"></IconButton>
       <IconButton mr={2} icon={<FaTwitter />} isRound="true"></IconButton>
       
         </Heading>
-      <IconButton mr= {1}icon={isDark? <FaSun /> : <FaMoon />} justifyContent="center" isRound="true" onClick={toggleColorMode}></IconButton>
+      <IconButton icon={isDark? <FaSun /> : <FaMoon />} justifyContent="center" isRound="true" onClick={toggleColorMode}></IconButton>
 
       </Flex>
-     </StickyContainer>
     
       <Header></Header>
       <Profile></Profile>
       <Testemonies></Testemonies>
     </VStack>
+     </StickyContainer>
   );
 }
 

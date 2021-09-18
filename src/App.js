@@ -3,8 +3,8 @@ import { IconButton, useColorMode } from '@chakra-ui/react'
 import {FaMoon, FaSun, FaTwitter, FaGithub, FaLinkedin  } from 'react-icons/fa'
 import Header from './Components/Header'
 import Profile from './Components/Profile'
-import Social from './Components/Social'
-
+import Testemonies from './Components/Testemonies'
+import { StickyContainer, Sticky } from 'react-sticky'
 function App() {
 
   const { colorMode, toggleColorMode } = useColorMode()
@@ -12,19 +12,24 @@ function App() {
 
   return (
     <VStack padding={5}>
-      <Flex w="100%">
-        <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">
-          LC
+      <StickyContainer>
+       
+      <Flex  w="100%">
+        <Heading mr="500" size="md" fontWeight="semibold" color="cyan.400">
+         
+      <IconButton mr={2}icon={<FaLinkedin/>} isRound ="true"></IconButton>
+      <IconButton mr={2} icon={<FaGithub />} isRound="true"></IconButton>
+      <IconButton mr={2} icon={<FaTwitter />} isRound="true"></IconButton>
+      
         </Heading>
-      <Spacer></Spacer>
-      <IconButton icon={<FaLinkedin/>} isRound ="true"></IconButton>
-      <IconButton ml={2} icon={<FaGithub />} isRound="true"></IconButton>
-      <IconButton ml={2} icon={<FaTwitter />} isRound="true"></IconButton>
-      <IconButton ml= {8}icon={isDark? <FaSun /> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
+      <IconButton mr= {1}icon={isDark? <FaSun /> : <FaMoon />} justifyContent="center" isRound="true" onClick={toggleColorMode}></IconButton>
+
       </Flex>
+     </StickyContainer>
+    
       <Header></Header>
-      <Social></Social>
       <Profile></Profile>
+      <Testemonies></Testemonies>
     </VStack>
   );
 }

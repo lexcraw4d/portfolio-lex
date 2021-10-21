@@ -18,6 +18,7 @@ function Header() {
         direction={["column", "row", "row", "row"]}
         w={["100%", "85%", "50%", "100%"]}
         justifyContent="center"
+   
      
       >
         <Box>

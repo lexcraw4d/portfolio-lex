@@ -43,11 +43,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+   min-width: 200px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
+            align-content: center;
             
   } 
   
@@ -55,6 +60,9 @@
     width: 13rem;
     margin: 1rem;
     cursor: pointer;
+    
+    min-width: 200px;
+ 
   }
   
   .container{
@@ -68,7 +76,7 @@
   .front,
   .back{
     background-size:  100%;
-      background-position: center;
+    background-position: inherit;
     background-repeat: no-repeat;
       -webkit-transition: -webkit-transform .5s cubic-bezier(0.4, 0.2, 0.2, 1);
       transition: -webkit-transform .5s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -83,6 +91,7 @@
       border-radius: 10px;
       color: #fff;
       font-size: 1.5rem;
+      
   }
   
   .back{
@@ -92,7 +101,7 @@
     background: linear-gradient(45deg,  #cedce7 0%,#12a79d 100%);
     font-size: 1.25rem;
       background-size: fixed;
-      background-position: center;
+      background-position: inherit;
     background-repeat: no-repeat;
   }
   
@@ -190,8 +199,7 @@
   }
   
   .front .inner p{
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
     position: relative;
     font-family:'Arvo', serif;
   }
@@ -219,8 +227,7 @@
   
   @media screen and (max-width: 85rem){
     .col{
-      width: calc(30% - 2rem);
-      margin: 0 2rem 1.5rem;
+      min-width: 200px;
     }
   }
   

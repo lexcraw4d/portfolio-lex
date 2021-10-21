@@ -39,7 +39,7 @@ function Skills() {
   return (
     <Box display="flex" mt={8}>
       <Flex>
-        <Box display="flex"  mr={5}direction="column"  alignItems="space-between" >
+        <Box display="flex"  mr={5}direction="row"  alignItems="space-between" >
           <Heading textAlign="center" id="heading" color="whiteAlpha.300">
             Skills
           </Heading>

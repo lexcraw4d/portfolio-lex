@@ -1,29 +1,33 @@
 import React from "react";
 
-import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
+import { Box, Flex, Heading, HStack, Text } from "@chakra-ui/layout";
 import Icon from "@chakra-ui/icon";
 import { DiCodeigniter, DiAndroid, DiWebplatform } from "react-icons/di";
 import Skills from "./Skills";
-import Projects from "./Projects";
+import LocalHeroes from "./Projects/LocalHeroes/LocalHeroes";
+import ProjectMain from "./Projects/LocalHeroes/ProjectMain";
 
 function Profile() {
   // const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
-    <Flex direction={["column", "column"]} w={["100%", "75%"]} alignItems="flex-end">
+    <Flex
+      direction={["column", "column"]}
+      w={["100%", "75%"]}
+      alignItems="flex-end"
+    >
       <Box
         direction={["column", "column"]}
         w={["100%", "75%"]}
         alignSelf="center"
         mb={6}
       >
-        <Heading fontWeight="extrabold" color="#F6E3B6"  mt={2}size="4xl">
+        <Heading fontWeight="extrabold" color="#F6E3B6" mt={2} size="4xl">
           3+
         </Heading>
-        <Text fontSize="2xl" color="gray.400" >
+        <Text fontSize="2xl" color="gray.400">
           Years of Experience
         </Text>
-      
       </Box>
       <Box direction={["column", "column"]} w={["100%", "85%"]}>
         <Text fontWeight="bold" fontSize="2xl">
@@ -57,8 +61,8 @@ function Profile() {
             </Text>
           </Flex>
           <Skills />
+          <ProjectMain />
         </Flex>
-      <Projects />
       </Box>
     </Flex>
   );
